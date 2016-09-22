@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "travistest": "jshint ./test/travistest.js"
   },
   "keywords": [],
   "author": "",
@@ -31,5 +32,8 @@
   "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
-  }
+  },
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
 }
