@@ -1,7 +1,7 @@
 {
   "name": "client-structure",
   "version": "1.0.0",
-  "description": "challenge all the records",
+  "description": "challenge all the records small",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
