@@ -31,13 +31,10 @@ export default class MainVideo extends React.Component {
       width: '560'
     }
     return (
-      <div>
-        <h1 className="home-header mainHeader">weChallenge of the Day: {this.props.video.title}</h1>
-        <div className="video-container">
+      <div className="video-youtube">
           <YouTube videoId={this.props.video.link}
             opts={opts}
           />
-        </div>
         <VideoActions className="video-actions" title={this.props.video.title} subId={this.props.video.id} link={this.props.video.link} votes={this.props.video.votes} comments={this.props.video.comments} />
       </div>
     )

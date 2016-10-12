@@ -7,21 +7,78 @@
   #FF9F1C - bright yellow (orange)
 */
 
+/*Revision Color Scheme
+  https://coolors.co/a7d2cb-f2d388-fdfffc-c98474-874c62
+  #A7D2CB - pastel blue
+  #F2D388 - buff (orange/yellow)
+  #C98474 - antique brass (reddish)
+  #874C62 - twilight lavender
+*/
+
+/*Revision Home*/
+
+h1.revision {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+.videoList-flexRow.revision {
+  display: flex;
+  font-family: 'PT Sans', sans-serif;
+  flex-wrap: wrap;
+}
+
+.videoList-flexRow-child.revision {
+  flex-basis: 250px;
+}
+
+.videoList-child-thumbnail {
+  border-radius: 10px;
+  width: 205px;
+  height: 135px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.videoList-child-title {
+  width: 200px;
+  text-align: center;
+  font-size: .9em;
+  word-wrap: break-word;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.videoList-user-flex {
+  display: flex;
+}
+
+.video-youtube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*Custom Bootstrap CSS*/
 
 body {
-  background-color: #FDFFFC;
+  /*background-color: #FDFFFC;*/
+    background-color: #C98474;
 }
 
 .navbar-inverse {
   background-color: #011627;
+    background-color: #874C62;
 }
 
 /*navbar component*/
 
 .navbar-brand {
-  font-family: 'Oswald', sans-serif;
-  color: #FF9F1C !important;
+  font-family: 'Open Sans', sans-serif;
+  color: #FDFFFC !important;
 }
 
 .navbar.margin-zero {
@@ -30,7 +87,7 @@ body {
 }
 
 .bar {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #101010;
   color: #FF9F1C !important;
   padding: 25px;
@@ -167,13 +224,13 @@ h1.home-header.topGlobal {
 
 .videolist-columns {
   margin: 5px;
-  flex-basis: 50%;
+  /*flex-basis: 50%;*/
 }
 
 .videolists-container {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: baseline;*/
 }
 
 .youtube-flexbox {
@@ -182,6 +239,7 @@ h1.home-header.topGlobal {
   margin-bottom: 10px;
   position: relative;
   z-index: 99;
+  flex-direction: column;
 }
 
 .youtube-container {
